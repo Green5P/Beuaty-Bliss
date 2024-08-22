@@ -10,16 +10,6 @@ body {
   margin: 50px auto;
 }
 
-.bi.bi-geo-alt {
-  font-size: 3rem;
-  width: 100px;
-  height: 100px;
-  background-color: blueviolet;
-  padding: 4px;
-  border-radius: 50%;
-  display: block;
-  line-height: 100px;
-}
 
 .user-info {
   width: 45%;
