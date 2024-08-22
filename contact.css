@@ -1,0 +1,163 @@
+body {
+  background-color: rgb(241, 201, 201);
+}
+
+.top {
+  display: flex;
+  justify-content: space-evenly;
+  width: fit-content;
+  /* max-width: 70vw; */
+  margin: 50px auto;
+}
+
+.bi.bi-geo-alt {
+  font-size: 3rem;
+  width: 100px;
+  height: 100px;
+  background-color: blueviolet;
+  padding: 4px;
+  border-radius: 50%;
+  display: block;
+  line-height: 100px;
+}
+
+.user-info {
+  width: 45%;
+}
+
+.user-deets {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact1 {
+  width: fit-content;
+  padding: 5px;
+  margin: 0 20px;
+  display: block;
+  justify-content: center;
+  text-align: center;
+}
+
+.contact1 img {
+  background-color: rgb(186, 117, 243);
+  width: 80px;
+  height: 80px;
+  padding: 20px;
+  border-radius: 50%;
+}
+
+.contact1 p {
+  color: rgb(152, 12, 245);
+}
+
+.contact1 span {
+  color: black;
+  font-weight: 600;
+}
+
+.contact-body {
+  height: 500px;
+  width: max-content;
+  display: flex;
+  margin: 0 auto;
+  border: 3px rgb(255, 255, 255) solid;
+  border-radius: 8px;
+  box-shadow: 3px 3px 10px 3px rgba(218, 162, 162, 0.705);
+}
+
+.contact-head {
+  padding-top: 120px;
+}
+
+.contact-head h1 {
+  color: rgba(0, 0, 0, 0.753);
+  text-align: center;
+  font-size: 3rem;
+  text-decoration: overline;
+}
+
+.form {
+  height: 100%;
+}
+
+.side {
+  width: 500px;
+  height: 100%;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  background: linear-gradient(
+      135deg,
+      rgba(70, 3, 64, 0.555),
+      rgba(33, 3, 116, 0.199)
+    ),
+    url(./assets/images/woman-lipstick.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+/* M E D I A    Q U E R I E S   S T A R T   H E R E */
+
+@media (max-width: 1300px) {
+  .top {
+    width: 80vw;
+    flex-wrap: wrap;
+  }
+
+  .contact1 {
+    width: 250px;
+    margin-top: 30px;
+    margin: 0 80px;
+    justify-content: space-between;
+  }
+
+  .contact-body {
+    width: 70vw;
+    height: min-content;
+  }
+
+  .form {
+    width: 60%;
+    height: min-content;
+  }
+
+  .form form {
+    width: 100%;
+  }
+
+  .side {
+    width: 40%;
+    height: auto;
+  }
+}
+
+/* ---------------- */
+
+@media (max-width: 1040px) {
+  .contact1 {
+    width: 220px;
+    margin: 0 30px;
+  }
+
+  .side {
+    display: none;
+  }
+
+  .contact-body {
+    width: 90vw;
+  }
+
+  .form {
+    width: 100%;
+  }
+}
+
+@media (max-width: 550px) {
+  .user-deets {
+    display: block;
+  }
+
+  .user-info {
+    width: 100%;
+  }
+}

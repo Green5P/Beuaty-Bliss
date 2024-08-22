@@ -1,0 +1,147 @@
+/* Footer Starts Here. */
+footer {
+  display: block;
+  padding: 10px 20px;
+  background-color: #150127f5;
+  /* height: 30vh; */
+  height: fit-content;
+}
+
+.foot-logo,
+.foot-contact,
+.foot-sub,
+.foot-icons .contact {
+  width: fit-content;
+  height: min-content;
+  margin-right: 30px;
+  /* margin-top: 30px; */
+}
+
+.foot-contact {
+  align-self: center;
+}
+
+.foot-contact p {
+  text-decoration: overline;
+}
+
+.foot-sub form {
+  width: fit-content;
+  height: fit-content;
+  padding: 0;
+}
+
+.foot-sub input {
+  width: 300px;
+  padding: 4px;
+  text-align: center;
+  color: black;
+  border-radius: 6px;
+}
+
+.foot-sub button {
+  margin-top: 10px;
+  width: 300px;
+  padding: 10px;
+  border-radius: 6px;
+  color: rgba(14, 13, 13, 0.904);
+  background-color: orange;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.foot-icons {
+  align-content: center;
+}
+
+.foot-icons p {
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 4px;
+}
+
+.foot-icons .social-icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 8rem;
+  border-radius: 5px;
+  padding: 4px;
+}
+
+.foot-icons .social {
+  cursor: pointer;
+  width: 2rem;
+  height: 2rem;
+}
+
+.foot-icons img {
+  width: 100%;
+}
+
+.contact {
+  align-content: center;
+}
+
+.contact p {
+  margin: 8px 0;
+  padding: 2px 0;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+}
+
+.foot-top {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-between;
+  margin: 30px 0;
+  padding: 10px;
+  height: auto;
+  /* max-height: 150px; */
+}
+
+.foot-top p {
+  font-size: 1.3rem;
+}
+
+.power-policy {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  /* border: 3px black solid; */
+}
+
+footer .policy {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+}
+
+.policy p {
+  margin: 8px 0;
+  padding: 8px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.664);
+}
+
+.policy p:hover {
+  color: rgb(224, 188, 26);
+  background-color: rgba(90, 90, 90, 0.753);
+  border-radius: 4px;
+}
+
+.policy a {
+  text-decoration: none;
+}
+
+@media (max-width: 1580px) {
+  .foot-top {
+    justify-content: space-around;
+  }
+}
