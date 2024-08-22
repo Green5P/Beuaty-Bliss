@@ -1,15 +1,13 @@
 body {
-  background-color: rgb(241, 201, 201);
+  background-color: rgba(241, 201, 201, 0.993);
 }
 
 .top {
   display: flex;
   justify-content: space-evenly;
   width: fit-content;
-  /* max-width: 70vw; */
   margin: 50px auto;
 }
-
 
 .user-info {
   width: 45%;
@@ -42,7 +40,7 @@ body {
 }
 
 .contact1 span {
-  color: black;
+  color: #0000;
   font-weight: 600;
 }
 
