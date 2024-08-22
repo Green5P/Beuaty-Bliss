@@ -6,7 +6,6 @@ body {
   display: flex;
   justify-content: space-evenly;
   width: fit-content;
-  /* max-width: 70vw; */
   margin: 50px auto;
 }
 
@@ -41,7 +40,7 @@ body {
 }
 
 .contact1 span {
-  color: black;
+  color: #0000;
   font-weight: 600;
 }
 
