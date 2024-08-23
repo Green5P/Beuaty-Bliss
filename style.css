@@ -154,6 +154,20 @@ section .main-text h1 {
   margin: 0 10%;
   height: 300px;
 }
+.buy button {
+  color: black;
+  width: 60%;
+  height: px;
+  padding: 2px;
+  font-size: 1.5rem;
+  border-radius: 15px;
+  background-color: rgb(255, 203, 173);;
+  margin: 20px;
+}
+
+.buy button:hover {
+  background-color: rgb(248, 133, 66);;
+}
 
 .product {
   text-align: center;

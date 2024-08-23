@@ -100,6 +100,22 @@
     rgba(255, 255, 255, 0.459),
     rgba(189, 185, 183, 0.027)
   );
+  text-align: center;
+}
+
+.buy button {
+  color: black;
+  width: 60%;
+  height: px;
+  padding: 2px;
+  font-size: 1.5rem;
+  border-radius: 15px;
+  background-color: rgb(255, 203, 173);;
+  margin: 20px;
+}
+
+.buy button:hover {
+  background-color: rgb(248, 133, 66);;
 }
 
 :is(
