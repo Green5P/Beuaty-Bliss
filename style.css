@@ -161,12 +161,12 @@ section .main-text h1 {
   padding: 2px;
   font-size: 1.5rem;
   border-radius: 15px;
-  background-color: rgb(255, 203, 173);;
+  background-color: rgb(255, 203, 173);
   margin: 20px;
 }
 
 .buy button:hover {
-  background-color: rgb(248, 133, 66);;
+  background-color: rgb(248, 133, 66);
 }
 
 .product {
@@ -180,7 +180,7 @@ section .main-text h1 {
 }
 
 .product:hover {
-  background-color: rgb(67, 52, 82);
+  background-color: rgba(60, 24, 82, 0.658);
 }
 
 .product img {
