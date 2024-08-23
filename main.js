@@ -6,20 +6,20 @@ document.querySelector("#menu-icon").onclick = () => {
 
 //
 
-const teamMembers = document.querySelectorAll(".team-member");
+// const teamMembers = document.querySelectorAll(".team-member");
 
-teamMembers.forEach((member, index) => {
-  member.addEventListener("mouseenter", () => {
-    teamMembers.forEach((otherMember, otherIndex) => {
-      if (otherIndex !== index) {
-        otherMember.style.display = "none";
-      }
-    });
-  });
+// teamMembers.forEach((member, index) => {
+//   member.addEventListener("mouseenter", () => {
+//     teamMembers.forEach((otherMember, otherIndex) => {
+//       if (otherIndex !== index) {
+//         otherMember.style.display = "none";
+//       }
+//     });
+//   });
 
-  member.addEventListener("mouseleave", () => {
-    teamMembers.forEach((otherMember) => {
-      otherMember.style.display = "block";
-    });
-  });
-});
+//   member.addEventListener("mouseleave", () => {
+//     teamMembers.forEach((otherMember) => {
+//       otherMember.style.display = "block";
+//     });
+//   });
+// });
