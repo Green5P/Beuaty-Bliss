@@ -1,3 +1,16 @@
+.floating-button {
+  background: url("../assets/images/Weman's-Products-Main.jpg");
+  width: 100px;
+  height: 100px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+  box-shadow: 3px 3px 30px 3px rgb(72, 13, 100);
+  margin-left: 90vw;
+  position: fixed;
+  z-index: 1;
+}
+
 .product-hero {
   text-align: center;
   font-size: 2rem;
@@ -110,12 +123,12 @@
   padding: 2px;
   font-size: 1.5rem;
   border-radius: 15px;
-  background-color: rgb(255, 203, 173);;
+  background-color: rgb(255, 203, 173);
   margin: 20px;
 }
 
 .buy button:hover {
-  background-color: rgb(248, 133, 66);;
+  background-color: rgb(248, 133, 66);
 }
 
 :is(
