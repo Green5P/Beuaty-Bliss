@@ -8,6 +8,18 @@
     <link rel="stylesheet" href="./footer.css" />
   </head>
   <body style="margin: 0">
+    <style>
+      #home {
+        color: orange;
+      }
+
+      #home:hover {
+        color: white;
+        text-decoration: underline;
+        transition: 1s;
+      }
+    </style>
+
     <!-- Copy The Header and Footer with the header inside a section element,
       then link is to the main "styles.css" file to get thesame structure 
       and styling for the header and footer for all pages -->
@@ -22,11 +34,13 @@
           <a href="../index.html"><h2>Beauty ~ Bliss</h2></a>
         </div>
         <div class="nav-pages">
-          <a class="nav" href="../index.html">Home</a>
-          <a class="nav" href="../products/product.html">Products</a>
+          <a class="nav" id="home" href="../index.html">Home</a>
+          <a class="nav" id="products" href="../products/product.html"
+            >Products</a
+          >
           <!-- <a class="nav" href="./about.html">About Us</a> -->
-          <a class="nav" href="../briceweb/about.html">About Us</a>
-          <a class="nav" href="../contacts.html">Contact Us</a>
+          <a class="nav" id="about" href="../briceweb/about.html">About Us</a>
+          <a class="nav" id="contact" href="../contacts.html">Contact Us</a>
         </div>
         <div class="icons">
           <div class="social" id="fb-icon">
