@@ -8,6 +8,18 @@
     <link rel="stylesheet" href="./footer.css" />
   </head>
   <body style="margin: 0">
+    <style>
+      #home {
+        color: orange;
+      }
+
+      #home:hover {
+        color: white;
+        text-decoration: underline;
+        transition: 1s;
+      }
+    </style>
+
     <!-- Copy The Header and Footer with the header inside a section element,
       then link is to the main "styles.css" file to get thesame structure 
       and styling for the header and footer for all pages -->
@@ -22,11 +34,13 @@
           <a href="../index.html"><h2>Beauty ~ Bliss</h2></a>
         </div>
         <div class="nav-pages">
-          <a class="nav" href="../index.html">Home</a>
-          <a class="nav" href="../products/product.html">Products</a>
+          <a class="nav" id="home" href="../index.html">Home</a>
+          <a class="nav" id="products" href="../products/product.html"
+            >Products</a
+          >
           <!-- <a class="nav" href="./about.html">About Us</a> -->
-          <a class="nav" href="../briceweb/about.html">About Us</a>
-          <a class="nav" href="../contacts.html">Contact Us</a>
+          <a class="nav" id="about" href="../briceweb/about.html">About Us</a>
+          <a class="nav" id="contact" href="../contacts.html">Contact Us</a>
         </div>
         <div class="icons">
           <div class="social" id="fb-icon">
@@ -64,17 +78,20 @@
             <h1><span>Beauty Bliss</span> Cosmetics for all.</h1>
             <br />
             <p>
-              Beauty Lorem ipsum dolor sit amet consectetur adipisicing elit. .
-              Ratione sint tenetur reprehenderit ribus aspernatur suscipit sunt
-              provident, quis officia sed!
+              Welcome to Beauty Bliss Cosmetics. <br />
+              At Beauty Bliss, we believe that everyone deserves to feel
+              confident and beautiful, regardless of gender. Our high-quality,
+              cruelty-free makeup line caters to all skin tones and preferences,
+              empowering you to express your unique style.
             </p>
             <br />
             <p>
-              ribus dolorum quasi velit blanditiis labore amet! Veniam eos s
-              dolores unde, dolor cum atque deserunt illum llum debitis quas
-              ipsum sequi porro sit in magni est iste ad natus numquam ex eum
-              nobis dicta. Ipsum, ad repellendus quam tenetur doloribus
-              aspernatur suscipit sunt provident, quis officia sed!
+              Makeup for Everybody. Whether you're a seasoned makeup enthusiast
+              or just starting to explore the world of cosmetics, our diverse
+              range of products is designed to enhance your natural beauty. From
+              long-lasting foundations and vibrant eyeshadows to hydrating lip
+              glosses and precision eyeliners, we have everything you need to
+              create the perfect look.
             </p>
           </div>
           <div class="main-img"></div>
@@ -200,7 +217,7 @@
           <p>(+237) 628 ### 000</p>
         </div>
       </div>
-      <hr style="width: 95.8vw; margin: 0 auto" />
+      <hr />
       <div class="power-policy">
         <div class="powered">
           <p style="color: rgba(255, 255, 255, 0.664)">
