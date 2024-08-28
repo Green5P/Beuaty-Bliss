@@ -154,6 +154,7 @@ section .main-text h1 {
   margin: 0 10%;
   height: 300px;
 }
+
 .buy button {
   color: black;
   width: 60%;
@@ -301,7 +302,7 @@ section .main-text h1 {
   }
 
   .product img:hover {
-    width: 170px;
+    width: 270px;
     transition: 1s;
   }
 }
@@ -326,11 +327,11 @@ section .main-text h1 {
   }
 
   .product img {
-    width: 200px;
+    width: 230px;
   }
 
   .product img:hover {
-    width: 170px;
+    width: 250px;
     transition: 1s;
   }
 }
@@ -396,11 +397,11 @@ section .main-text h1 {
   }
 
   .product img {
-    width: 170px;
+    width: 210px;
   }
 
   .product img:hover {
-    width: 170px;
+    width: 230px;
     transition: 1s;
   }
 }
