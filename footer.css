@@ -59,6 +59,7 @@ hr {
 
 .foot-icons {
   align-content: center;
+  height: fit-content;
 }
 
 .foot-icons p {
@@ -74,12 +75,14 @@ hr {
   width: 8rem;
   border-radius: 5px;
   padding: 4px;
+  margin: 2px 0;
 }
 
 .foot-icons .social {
   cursor: pointer;
   width: 2rem;
   height: 2rem;
+  margin: 0;
 }
 
 .foot-icons img {
@@ -87,7 +90,7 @@ hr {
 }
 
 .contact {
-  align-content: center;
+  display: block;
 }
 
 .contact p {
@@ -108,6 +111,10 @@ hr {
   padding: 10px;
   height: auto;
   /* max-height: 150px; */
+}
+
+.foot-top div {
+  margin: 10px 0;
 }
 
 .foot-top p {
@@ -151,6 +158,10 @@ footer .policy {
     justify-content: space-around;
   }
 
+  .foot-icons {
+    width: 964px;
+  }
+
   @media (max-width: 1200px) {
     .foot-top {
       justify-content: space-between;
@@ -164,10 +175,52 @@ footer .policy {
     .foot-sub {
       width: 40vw;
       margin-right: 3px;
+      align-content: center;
+    }
+
+    .foot-icons {
+      width: fit-content;
+    }
+
+    .power-policy {
+      display: block;
+    }
+
+    .power-policy :is(.policy, p) {
+      width: fit-content;
+      margin: auto;
+      margin-top: 20px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .foot-contact,
+    .foot-sub,
+    .foot-top {
+      width: 80vw;
+      margin: auto;
+    }
+
+    .foot-sub form {
+      width: 100%;
+    }
+
+    .foot-sub :is(button, input) {
+      width: 100%;
     }
 
     .foot-icons,
-    .contact {
+    .foot-logo {
+      width: 40vw;
+    }
+  }
+
+  @media (max-width: 650px) {
+    .policy p {
+      font-size: 0.8rem;
+      text-transform: capitalize;
+      background-color: rgba(97, 97, 97, 0.473);
+      border-radius: 50%;
     }
   }
 }
