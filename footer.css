@@ -150,4 +150,24 @@ footer .policy {
   .foot-top {
     justify-content: space-around;
   }
+
+  @media (max-width: 1200px) {
+    .foot-top {
+      justify-content: space-between;
+    }
+
+    .foot-contact,
+    .foot-logo {
+      width: 40vw;
+    }
+
+    .foot-sub {
+      width: 40vw;
+      margin-right: 3px;
+    }
+
+    .foot-icons,
+    .contact {
+    }
+  }
 }
