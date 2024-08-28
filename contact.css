@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   background: linear-gradient(
       to right,
@@ -129,6 +133,16 @@ body {
 /* ---------------- */
 
 @media (max-width: 1040px) {
+  body {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .contact-head {
+    padding-top: 130px;
+  }
+
   .contact1 {
     width: 220px;
     margin: 0 30px;

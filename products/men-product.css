@@ -1,11 +1,21 @@
-.floating-button {
+#floating-button-m {
   background: url("../assets/images/Weman's-Products-Main.jpg");
-  width: 100px;
-  height: 100px;
   background-size: cover;
   background-position: center;
+}
+
+#floating-button-w {
+  background: url("../assets/images/Men's-Products-Main.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.floating-button {
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
   box-shadow: 3px 3px 30px 3px rgb(72, 13, 100);
+  margin-right: 30px;
   margin-left: 90vw;
   position: fixed;
   z-index: 1;
