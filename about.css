@@ -1,44 +1,56 @@
-/*  */
-
-.team-member-wrapper {
+.team-member-row1,
+.team-member-row2 {
   display: flex;
-  justify-content: center;
-  gap: 2rem;
+  justify-content: space-between;
+  margin-top: 100px;
+  margin: 0 200px;
+}
+
+.hover-content {
+  display: none; /* Initially hide hover content */
+  position: absolute;
+  bottom: 0; /* Position it at the bottom of the member */
+  left: 0;
+  right: 0;
+  background-color: rgba(21, 1, 32, 0.884); /* Semi-transparent background */
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  opacity: 0; /* Start with opacity 0 */
+
+  transition: opacity 3s ease-in-out; /* Smooth transition for opacity */
+  -webkit-transition: opacity 3s ease-in-out;
+  -moz-transition: opacity 3s ease-in-out;
 }
 
 .team-member {
+  margin-top: 50px;
   position: relative;
-  overflow: hidden;
-  width: 33.33%;
-  transition: all 0.3s ease;
+  cursor: pointer;
+  width: min-content;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 1.3rem;
+  border: 4px solid rgba(255, 255, 255, 0.295);
+  transition: border 3s;
+}
+
+.team-member:hover {
+  border: 4px solid rgba(255, 166, 0, 0.589);
 }
 
 .team-member img {
+  border-radius: 8px;
+}
+
+.role {
+  color: orange;
+}
+
+.team-member:hover .hover-content {
   display: block;
-  width: 100%;
-  height: auto;
+  opacity: 1;
 }
-
-.team-member .hover-content {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
-  color: #fff;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
-.team-member .role {
-  transition: opacity 0.3s ease;
-}
-
 /*  */
 
 .about-body {
@@ -90,6 +102,7 @@
 .company-history {
   font-size: 1.3rem;
   margin: 0 auto;
+  margin-top: 100px;
   height: 350px;
   width: 350px;
   background: linear-gradient(
@@ -126,7 +139,6 @@
 .about-row1 h2 {
   font-size: 2rem;
   margin: 2px auto;
-  color: ;
 }
 
 /* Giving Back  */
@@ -173,10 +185,12 @@
 .contact-info a {
   text-decoration: none;
   color: orange;
+  transition: 1s ease-in-out;
 }
 
-.contact-info a:hover {
-  color: rgb(199, 95, 10);
+.btn:hover {
+  color: rgb(230, 212, 199);
+  background-color: rgb(37, 36, 36);
 }
 
 .btn {
