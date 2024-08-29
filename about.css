@@ -156,5 +156,11 @@
 }
 
 .contact-info a:hover {
-  color: white;
+  color: rgb(199, 95, 10);
+}
+
+.btn {
+  background-color: rgba(82, 78, 78, 0.774);
+  padding: 3px;
+  border-radius: 8px;
 }
