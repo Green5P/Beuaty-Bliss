@@ -41,6 +41,14 @@
 
 /*  */
 
+.about-body {
+  max-width: 80vw;
+  margin: 0 300px;
+  border-right: 4px solid rgb(58, 17, 82);
+  border-left: 4px solid rgb(58, 17, 82);
+  box-shadow: 2px 40px 40px rgb(61, 44, 78);
+}
+
 .about-page {
   padding-top: 200px;
   background-color: rgb(201, 117, 117);
@@ -103,4 +111,50 @@
   padding: 40px;
   justify-content: center;
   align-content: center;
+}
+
+/* Giving Back  */
+
+.community-involvement {
+  font-size: 2rem;
+  height: 600px;
+  padding: 100px;
+  background: linear-gradient(
+      to right,
+      rgba(12, 12, 12, 0.836),
+      rgba(82, 56, 90, 0.205)
+    ),
+    url(./assets/images/About/Giving-back.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.community-involvement p {
+  width: 80%;
+}
+
+.contact-info {
+  font-size: 1.6rem;
+  margin-top: 100px;
+  padding: 100px;
+  padding-right: 55%;
+  height: 500px;
+  background: linear-gradient(
+      to right,
+      rgb(19, 18, 18),
+      rgba(122, 119, 122, 0.178)
+    ),
+    url(./assets/images/About/contact.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.contact-info a {
+  text-decoration: none;
+  color: orange;
+}
+
+.contact-info a:hover {
+  color: white;
 }
