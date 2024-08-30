@@ -327,6 +327,11 @@ section .main-text h1 {
     width: 270px;
     transition: 1s;
   }
+
+  #menu-icon {
+    width: 2.2rem;
+    height: 2.1rem;
+  }
 }
 
 @media (max-width: 900px) {
