@@ -1,45 +1,67 @@
-/*  */
-
-.team-member-wrapper {
+.team-member-row1,
+.team-member-row2 {
   display: flex;
-  justify-content: center;
-  gap: 2rem;
+  justify-content: space-between;
+  margin-top: 100px;
+  margin: 0 170px;
+}
+
+.hover-content {
+  display: none; /* Initially hide hover content */
+  position: absolute;
+  bottom: 0; /* Position it at the bottom of the member */
+  left: 0;
+  right: 0;
+  background-color: rgba(21, 1, 32, 0.884); /* Semi-transparent background */
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  opacity: 0; /* Start with opacity 0 */
+
+  transition: opacity 3s ease-in-out; /* Smooth transition for opacity */
+  -webkit-transition: opacity 3s ease-in-out;
+  -moz-transition: opacity 3s ease-in-out;
 }
 
 .team-member {
+  margin-top: 50px;
   position: relative;
-  overflow: hidden;
-  width: 33.33%;
-  transition: all 0.3s ease;
+  cursor: pointer;
+  width: min-content;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 1.3rem;
+  border: 4px solid rgba(255, 255, 255, 0.295);
+  transition: border 3s;
+}
+
+.team-member:hover {
+  border: 4px solid rgba(255, 166, 0, 0.589);
 }
 
 .team-member img {
+  width: 300px;
+  height: 270px;
+  border-radius: 8px;
+}
+
+.role {
+  color: orange;
+}
+
+.team-member:hover .hover-content {
   display: block;
-  width: 100%;
-  height: auto;
+  opacity: 1;
 }
-
-.team-member .hover-content {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
-  color: #fff;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
-.team-member .role {
-  transition: opacity 0.3s ease;
-}
-
 /*  */
+
+.about-body {
+  max-width: 80vw;
+  margin: 0 300px;
+  border-right: 4px solid rgb(58, 17, 82);
+  border-left: 4px solid rgb(58, 17, 82);
+  box-shadow: 2px 40px 40px rgb(61, 44, 78);
+}
 
 .about-page {
   padding-top: 200px;
@@ -50,6 +72,7 @@
 .about-page {
   background: linear-gradient(rgba(38, 12, 63, 0.616), rgba(22, 2, 54, 0.911)),
     url(./assets/images/Home\ Background.jpg);
+
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -79,10 +102,37 @@
   padding: 20px 40px;
 }
 
+.company-history {
+  font-size: 1.3rem;
+  margin: 0 auto;
+  margin-top: 100px;
+  height: 350px;
+  width: 350px;
+  background: linear-gradient(
+    #240046d3,
+    #3c096cd0,
+    #59189adc,
+    #7a2cbfb6,
+    #9d4eddc5
+  );
+  border-radius: 50%;
+  padding: 40px;
+  justify-content: center;
+  align-content: center;
+}
+
 .about-row1 div {
-  height: 320px;
-  width: 320px;
-  background-color: red;
+  font-size: 1.3rem;
+  height: 390px;
+  width: 390px;
+  background: linear-gradient(
+    120deg,
+    #240046d3,
+    #3c096cd0,
+    #59189adc,
+    #7a2cbfb6,
+    #9d4eddc5
+  );
   border-radius: 50%;
   padding: 40px;
   justify-content: center;
@@ -94,13 +144,130 @@
   margin: 2px auto;
 }
 
-.company-history {
-  margin: 0 auto;
-  height: 300px;
-  width: 300px;
-  background-color: red;
-  border-radius: 50%;
-  padding: 40px;
-  justify-content: center;
-  align-content: center;
+/* Giving Back  */
+
+.community-involvement {
+  font-size: 2rem;
+  height: 600px;
+  padding: 100px;
+  background: linear-gradient(
+      to right,
+      rgba(12, 12, 12, 0.836),
+      rgba(82, 56, 90, 0.205)
+    ),
+    url(./assets/images/About/Giving-back.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.community-involvement p {
+  width: 80%;
+}
+
+.about-row2 {
+  margin-top: 100px;
+}
+
+.contact-info {
+  font-size: 1.6rem;
+  margin-top: 100px;
+  padding-bottom: 100px;
+  padding: 100px;
+  padding-right: 55%;
+  height: fit-content;
+  background: linear-gradient(
+      to right,
+      rgb(19, 18, 18),
+      rgba(122, 119, 122, 0.178)
+    ),
+    url(./assets/images/About/contact.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.contact-info a {
+  text-decoration: none;
+  color: orange;
+  transition: 1s ease-in-out;
+}
+
+.btn:hover {
+  color: rgb(230, 212, 199);
+  background-color: rgb(37, 36, 36);
+}
+
+.btn {
+  background-color: rgba(82, 78, 78, 0.774);
+  padding: 3px;
+  border-radius: 8px;
+}
+
+.contact-info h2 {
+  width: fit-content;
+}
+
+/* nav */
+
+/* Footer start */
+.powered {
+  font-size: 0.6rem;
+}
+/* Footer end */
+
+/* M E D I A    Q U E R I E S   S T A R T   H E R E */
+
+@media (max-width: 1600px) {
+  .about-body {
+    margin: 0 100px;
+  }
+}
+
+@media (max-width: 1300px) {
+  .about-body {
+    max-width: 100vw;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 1025px) {
+  .team-member-row1,
+  .team-member-row2 {
+    margin: 0 130px;
+  }
+
+  .contact-info {
+    padding-right: 40%;
+    background: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.884),
+        rgba(29, 26, 26, 0.829),
+        rgba(80, 76, 76, 0.103)
+      ),
+      url(./assets/images/About/contact.jpg);
+    background-size: contain;
+    background-position: right;
+  }
+}
+
+@media (max-width: 980px) {
+  .contact-info {
+    padding-right: 10%;
+    background: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.884),
+        rgba(29, 26, 26, 0.829),
+        rgba(80, 76, 76, 0.103)
+      ),
+      url(./assets/images/About/About-Background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-size: 0.8rem;
+  }
+
+  .team-member img {
+    width: 250px;
+    height: 210px;
+  }
 }

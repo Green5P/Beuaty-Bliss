@@ -26,7 +26,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 8rem;
+  width: 10rem;
   border-radius: 5px;
   padding: 4px;
 }
@@ -39,6 +39,28 @@
 
 .icons img {
   width: 100%;
+}
+
+#cart {
+  width: 2.1rem;
+  height: 2.1rem;
+  background-color: white;
+  border-radius: 6px;
+}
+
+.cart-img {
+  padding-top: 7px;
+  padding-left: 3px;
+  background: url(./assets/images/icons/8666616_shopping_cart_icon.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#cart p {
+  text-decoration: none;
+  font-size: 0.8rem;
+  color: black;
+  text-align: center;
 }
 
 #menu-icon {
@@ -154,6 +176,7 @@ section .main-text h1 {
   margin: 0 10%;
   height: 300px;
 }
+
 .buy button {
   color: black;
   width: 60%;
@@ -301,8 +324,13 @@ section .main-text h1 {
   }
 
   .product img:hover {
-    width: 170px;
+    width: 270px;
     transition: 1s;
+  }
+
+  #menu-icon {
+    width: 2.2rem;
+    height: 2.1rem;
   }
 }
 
@@ -326,12 +354,17 @@ section .main-text h1 {
   }
 
   .product img {
-    width: 200px;
+    width: 230px;
   }
 
   .product img:hover {
-    width: 170px;
+    width: 250px;
     transition: 1s;
+  }
+
+  #menu-icon {
+    width: 2.2rem;
+    height: 2.1rem;
   }
 }
 
@@ -358,18 +391,18 @@ section .main-text h1 {
   }
 
   .icons {
-    width: 8rem;
+    width: 10rem;
     margin-left: 50px;
   }
 
   .icons div {
-    width: 1.6rem;
+    width: 2.1rem;
   }
 
   #menu-icon {
-    width: 1.6rem;
-    height: 1.5rem;
-    margin-bottom: 6px;
+    width: 2rem;
+    height: 1.9rem;
+    /* margin-bottom: 6px; */
   }
 
   .logo h2 {
@@ -396,11 +429,11 @@ section .main-text h1 {
   }
 
   .product img {
-    width: 170px;
+    width: 210px;
   }
 
   .product img:hover {
-    width: 170px;
+    width: 230px;
     transition: 1s;
   }
 }
@@ -411,9 +444,34 @@ section .main-text h1 {
   }
 
   section .logo h2 {
-    /* display: none; */
-    font-size: 1.2rem;
-    width: 100px;
-    text-align: center;
+    display: none;
+  }
+
+  .icons {
+    width: 20rem;
+    margin-left: 20px;
+  }
+
+  .icons div {
+    width: 2rem;
+    height: 2.3rem;
+  }
+
+  #cart {
+    width: 2rem;
+    height: 2rem;
+    margin-bottom: 6px;
+  }
+
+  .cart-img {
+    width: 2rem;
+    height: 2rem;
+    background-size: contain;
+  }
+
+  #menu-icon {
+    width: 2rem;
+    height: 2rem;
+    margin-bottom: 4px;
   }
 }
