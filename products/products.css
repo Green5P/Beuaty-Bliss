@@ -20,7 +20,7 @@ h1 {
   text-align: center;
   text-transform: uppercase;
   text-decoration: overline;
-  color: rgb(255, 203, 173);
+  color: orange;
   padding-top: 30px;
 }
 
@@ -32,7 +32,7 @@ h1 {
 
 .choice {
   margin: 100px auto 0 auto;
-  width: 100%;
+  width: 80%;
   max-width: 90vw;
   height: max-content;
   display: flex;
@@ -40,13 +40,13 @@ h1 {
 }
 
 .product-choice {
-  width: 80%;
+  width: 30%;
   height: fit-content;
 }
 
 .product-choice h2 {
   text-align: center;
-  color: rgb(255, 203, 173);
+  color: orange;
   font-size: 2.3rem;
   margin: 20px auto;
 }
@@ -72,6 +72,26 @@ M E D I A   Q U E R I E S   H E R E
 
 
 */
+
+@media (max-width: 1300px) {
+  .choice {
+    width: 100%;
+  }
+
+  .product-choice {
+    width: 40%;
+  }
+}
+
+@media (max-width: 1025px) {
+  .choice {
+    width: 100%;
+  }
+
+  .product-choice {
+    width: 48%;
+  }
+}
 
 @media (max-width: 765px) {
   .product-body h1 {
