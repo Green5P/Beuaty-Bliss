@@ -10,7 +10,7 @@ const numberDisplay = document.querySelector("#cart_total");
 
 buttons.forEach((button) => {
   button.onclick = () => {
-    cartItems++;
+    cartItems += 1;
     numberDisplay.textContent = cartItems;
   };
 });
