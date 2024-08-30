@@ -117,3 +117,14 @@ M E D I A   Q U E R I E S   H E R E
     height: 200px;
   }
 }
+
+@media (max-width: 560px) {
+  .choice {
+    display: block;
+  }
+
+  .product-choice {
+    margin: 0 auto;
+    width: fit-content;
+  }
+}

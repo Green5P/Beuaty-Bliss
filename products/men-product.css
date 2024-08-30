@@ -15,9 +15,9 @@
   height: 100px;
   border-radius: 50%;
   box-shadow: 3px 3px 30px 3px rgb(72, 13, 100);
-  margin-right: 30px;
-  margin-left: 90vw;
   position: fixed;
+  bottom: 150px; /* Distance from the bottom of the viewport */
+  right: 20px; /* Distance from the right of the viewport */
   z-index: 1;
 }
 
@@ -216,5 +216,16 @@
   .row3-products,
   .row4-products {
     margin: 0 10px;
+  }
+}
+
+@media (max-width: 765px) {
+  .featured-paf img {
+    width: 80%;
+  }
+
+  .floating-button {
+    width: 70px;
+    height: 70px;
   }
 }
