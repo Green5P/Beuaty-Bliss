@@ -18,6 +18,7 @@ body {
   display: flex;
   justify-content: space-evenly;
   width: fit-content;
+  height: max-content;
   margin: 30px auto;
 }
 
@@ -32,6 +33,7 @@ body {
 
 .contact1 {
   width: fit-content;
+  height: 120px;
   padding: 5px;
   margin: 0 20px;
   display: block;
@@ -45,6 +47,15 @@ body {
   height: 80px;
   padding: 20px;
   border-radius: 50%;
+  transition: all 0.8s ease;
+}
+
+.contact1 img:hover {
+  width: 80px;
+  height: 80px;
+  border-radius: 10px;
+  background-color: blueviolet;
+  transition: 0.8s ease-in-out;
 }
 
 .contact1 p {
